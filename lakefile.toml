@@ -1,0 +1,10 @@
+name = "yoneda-in-lean"
+version = "0.1.0"
+defaultTargets = ["yoneda-in-lean"]
+
+[[lean_lib]]
+name = "YonedaInLean"
+
+[[lean_exe]]
+name = "yoneda-in-lean"
+root = "Main"
