@@ -23,6 +23,7 @@ Lean is based on [dependent type theory](https://lean-lang.org/theorem_proving_i
 **Universe levels replace the large/small distinction**
 
 >A category is **locally small** in the sense used here when its objects live in `Type u`, and each hom-set lives in `Type v`.
+>
 In set-theoretic foundations, the distinction between *small* and *large* is handled by Grothendieck universes or by separating sets from classes. In Lean 4 this is handled by *universe polymorphism*: `Type v` is a type universe at level `v`, and is iteself a type, but lives in the next higher universe (`Type v : Type (v+1)`).
 
 >Also, the version with `Type` subsumes the version with `Set`: any $\mathbf{Set}$-valued presheaf is a special case of a `Type`-valued one (since a `Set` is a type).
